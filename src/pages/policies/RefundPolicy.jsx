@@ -22,14 +22,14 @@ export default function RefundPolicy() {
         <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-500/5 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2"></div>
 
         <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 rounded-full bg-amber-50 text-amber-600 text-[10px] font-bold uppercase tracking-widest hover:bg-amber-100 transition-all shadow-sm"
           >
             <FiArrowLeft className="text-amber-500" /> Back to Home
           </Link>
           <div className="inline-flex items-center justify-center w-16 h-16 bg-white border border-slate-100 rounded-2xl text-amber-500 mb-8 shadow-sm">
-             <FiRotateCcw size={32} />
+            <FiRotateCcw size={32} />
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-8 leading-tight tracking-tighter">
             Return <span className="text-amber-500 underline decoration-slate-200 underline-offset-8 italic">Policy.</span>
@@ -45,7 +45,7 @@ export default function RefundPolicy() {
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-slate-600 font-medium leading-relaxed space-y-12 prose-headings:text-slate-900 prose-headings:font-bold prose-headings:tracking-tight prose-strong:text-slate-900 prose-a:text-amber-600">
-              
+
               <section className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-sm text-slate-600">
                 <p>
                   Thank you for your purchase. We hope you are happy with your purchase. However, if you are not completely satisfied with your purchase for any reason, you may return it to us for a refund only. Please see below for more information on our return policy.
@@ -79,10 +79,8 @@ export default function RefundPolicy() {
                 </p>
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 font-bold text-slate-900 mt-4">
                   <p className="m-0">Mister Appliance</p>
-                  <p className="m-0">Attn: Returns</p>
-                  <p className="m-0 text-amber-600">RMA # [Your RMA Number]</p>
                   <p className="m-0">2010 N Loop W #105</p>
-                  <p className="m-0">North Little Rock, Arkansas, USA</p>
+                  <p className="m-0">West Ashley, Charleston, SC, USA</p>
                   <p className="m-0">United States</p>
                 </div>
                 <p className="mt-4 text-slate-900">
@@ -139,7 +137,7 @@ export default function RefundPolicy() {
                       </div>
                       <div>
                         <p className="text-slate-400 text-sm font-bold uppercase tracking-wider m-0 text-slate-400">Location</p>
-                        <p className="font-bold text-lg m-0 text-white">North Little Rock, Arkansas, USA</p>
+                        <p className="font-bold text-lg m-0 text-white">West Ashley, Charleston, SC, USA</p>
                       </div>
                     </div>
                   </div>

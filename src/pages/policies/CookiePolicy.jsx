@@ -158,7 +158,7 @@ export default function CookiePolicy() {
                       </div>
                       <div>
                         <p className="text-slate-400 text-sm font-bold uppercase tracking-wider m-0 text-slate-400">Address</p>
-                        <p className="font-bold text-lg m-0 text-white">North Little Rock, Arkansas, USA</p>
+                        <p className="font-bold text-lg m-0 text-white">West Ashley, Charleston, SC, USA</p>
                       </div>
                     </div>
                   </div>

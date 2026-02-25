@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { 
-  FiMenu, 
-  FiX, 
-  FiSearch, 
-  FiMail, 
-  FiGrid, 
-  FiZap, 
-  FiShield, 
+import {
+  FiMenu,
+  FiX,
+  FiSearch,
+  FiMail,
+  FiGrid,
+  FiZap,
+  FiShield,
   FiChevronRight,
   FiLayout,
   FiPlus
 } from "react-icons/fi";
-import { 
-  PiWrenchDuotone, 
-  PiClockDuotone, 
-  PiEnvelopeDuotone, 
+import {
+  PiWrenchDuotone,
+  PiClockDuotone,
+  PiEnvelopeDuotone,
   PiCalendarPlusDuotone,
   PiHouseLineDuotone,
   PiInfoDuotone,
@@ -49,47 +49,44 @@ const Header = () => {
     { name: "Home", path: "/", icon: <PiHouseLineDuotone /> },
     { name: "About", path: "/about", icon: <PiInfoDuotone /> },
     { name: "Services", path: "/services", hasMega: true, icon: <FiGrid /> },
-    { name: "Journal", path: "/blog", icon: <PiNewspaperClippingDuotone /> },
     { name: "Contact", path: "/contact", icon: <PiChatCenteredTextDuotone /> },
   ];
 
   return (
     <div className={`fixed top-0 left-0 w-full z-[200] transition-all duration-500 pointer-events-none ${scrolled ? 'pt-0 px-0' : 'pt-4 md:pt-6 px-4 md:px-10'}`}>
       <div className={`mx-auto pointer-events-auto transition-all duration-500 ${scrolled ? 'max-w-full' : 'max-w-[1400px]'}`}>
-        
+
         {/* The Floating Bento Island */}
-        <header 
-          className={`flex items-center justify-between transition-all duration-500 border ${
-            scrolled 
-              ? "bg-slate-900/95 backdrop-blur-2xl border-slate-800 shadow-xl px-6 py-3 rounded-none" 
-              : "bg-white/70 backdrop-blur-md border-slate-200/50 shadow-2xl shadow-slate-200/20 px-5 py-3 md:px-8 md:py-4 rounded-[2rem] md:rounded-[3rem]"
-          }`}
+        <header
+          className={`flex items-center justify-between transition-all duration-500 border ${scrolled
+            ? "bg-slate-900/95 backdrop-blur-2xl border-slate-800 shadow-xl px-6 py-3 rounded-none"
+            : "bg-white/70 backdrop-blur-md border-slate-200/50 shadow-2xl shadow-slate-200/20 px-5 py-3 md:px-8 md:py-4 rounded-[2rem] md:rounded-[3rem]"
+            }`}
         >
           {/* Brand - Creative Layout */}
           <Link to="/" className="flex items-center gap-2 group relative">
             <img
               src="/logo/logo.png"
               alt="Mister Appliance"
-              className={`h-10 md:h-12 lg:h-14 object-contain transition-all duration-500 ${scrolled ? 'brightness-0 invert' : ''}`}
+              className={`h-10 md:h-12 lg:h-14 p-2 rounded-md bg-[#11192C]  object-contain transition-all duration-500 `}
             />
           </Link>
 
           {/* Nav - Minimal Bento Feel */}
           <nav className="hidden lg:flex items-center gap-1 bg-transparent">
             {navItems.map((item) => (
-              <div 
-                key={item.name} 
+              <div
+                key={item.name}
                 className="relative group py-2"
                 onMouseEnter={() => item.hasMega && setServicesOpen(true)}
                 onMouseLeave={() => item.hasMega && setServicesOpen(false)}
               >
                 <Link
                   to={item.path}
-                  className={`px-5 py-2.5 rounded-2xl text-[14px] font-bold transition-all duration-300 flex items-center gap-2 ${
-                    location.pathname === item.path 
-                      ? (scrolled ? "bg-amber-400 text-black shadow-lg shadow-amber-400/20" : "bg-slate-900 text-white") 
-                      : (scrolled ? "text-slate-300 hover:text-white" : "text-slate-600 hover:text-slate-900 hover:bg-slate-100")
-                  }`}
+                  className={`px-5 py-2.5 rounded-2xl text-[14px] font-bold transition-all duration-300 flex items-center gap-2 ${location.pathname === item.path
+                    ? (scrolled ? "bg-amber-400 text-black shadow-lg shadow-amber-400/20" : "bg-slate-900 text-white")
+                    : (scrolled ? "text-slate-300 hover:text-white" : "text-slate-600 hover:text-slate-900 hover:bg-slate-100")
+                    }`}
                 >
                   <span className="text-lg opacity-70 group-hover:opacity-100 transition-opacity">{item.icon}</span>
                   {item.name}
@@ -103,12 +100,12 @@ const Header = () => {
                       <div className="w-1/3 bg-slate-950 p-10 flex flex-col justify-between text-white relative">
                         <div>
                           <FiZap className="text-amber-400 text-3xl mb-6" />
-                          <h4 className="text-2xl font-black leading-tight mb-4">Fastest<br/>Repairs.</h4>
+                          <h4 className="text-2xl font-black leading-tight mb-4">Fastest<br />Repairs.</h4>
                           <p className="text-slate-400 text-xs leading-relaxed">Certified specialists ready to fix any appliance in 24 hours.</p>
                         </div>
                         <div className="space-y-3">
                           <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-amber-400">
-                                                         <FiShield /> 45-Day Warranty                          </div>
+                            <FiShield /> 45-Day Warranty                          </div>
                         </div>
                         <div className="absolute -bottom-8 -right-8 opacity-10">
                           <FiLayout size={180} />
@@ -117,8 +114,8 @@ const Header = () => {
                       {/* Services Grid */}
                       <div className="w-2/3 p-10 grid grid-cols-2 gap-x-6 gap-y-1 bg-white items-center">
                         {servicesData.slice(0, 10).map((s) => (
-                          <Link 
-                            key={s.id} 
+                          <Link
+                            key={s.id}
                             to={`/service/${s.slug}`}
                             className="group/item py-2 flex items-center justify-between border-b border-slate-50 hover:border-amber-400 transition-all"
                           >
@@ -145,24 +142,22 @@ const Header = () => {
                 <a href="mailto:info@misterappliance.shop" className="text-[13px] font-black">info@misterappliance.shop</a>
               </div>
             </div>
-            <button 
+            <button
               onClick={() => openBookingModal()}
-              className={`px-8 py-3 rounded-2xl font-black text-[12px] uppercase tracking-widest transition-all duration-300 active:scale-95 ${
-                scrolled 
-                  ? "bg-amber-400 text-black hover:bg-white shadow-lg shadow-amber-400/20" 
-                  : "bg-slate-900 text-white hover:bg-amber-400 hover:text-black shadow-xl shadow-slate-900/10"
-              }`}
+              className={`px-8 py-3 rounded-2xl font-black text-[12px] uppercase tracking-widest transition-all duration-300 active:scale-95 ${scrolled
+                ? "bg-amber-400 text-black hover:bg-white shadow-lg shadow-amber-400/20"
+                : "bg-slate-900 text-white hover:bg-amber-400 hover:text-black shadow-xl shadow-slate-900/10"
+                }`}
             >
               Book Now
             </button>
           </div>
 
           {/* Mobile Menu Toggle */}
-          <button 
+          <button
             onClick={() => setMobileMenuOpen(true)}
-            className={`lg:hidden w-12 h-12 rounded-2xl flex items-center justify-center transition-all ${
-              scrolled ? 'bg-amber-400 text-black' : 'bg-slate-900 text-white shadow-lg'
-            }`}
+            className={`lg:hidden w-12 h-12 rounded-2xl flex items-center justify-center transition-all ${scrolled ? 'bg-amber-400 text-black' : 'bg-slate-900 text-white shadow-lg'
+              }`}
           >
             <FiMenu size={24} />
           </button>
@@ -207,7 +202,7 @@ const Header = () => {
                   <FiMail size={20} />
                 </div>
               </div>
-              <button 
+              <button
                 onClick={() => { setMobileMenuOpen(false); openBookingModal(); }}
                 className="w-full bg-amber-400 text-black py-6 rounded-[2rem] font-black uppercase tracking-widest text-sm hover:shadow-2xl hover:shadow-amber-400/20 active:scale-95 transition-all"
               >

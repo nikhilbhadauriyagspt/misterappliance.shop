@@ -29,7 +29,7 @@ const About = () => {
             <span className="text-[10px] font-bold uppercase tracking-[4px]">Our Story</span>
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-8 leading-tight tracking-tighter">
-            We're on a mission to <br/>
+            We're on a mission to <br />
             make home repair <span className="text-amber-500 underline decoration-slate-200 underline-offset-8 italic">Honest.</span>
           </h1>
           <p className="text-slate-500 text-lg md:text-xl font-medium max-w-3xl mx-auto leading-relaxed">
@@ -47,15 +47,15 @@ const About = () => {
               <div className="rounded-[3rem] overflow-hidden border-8 border-white shadow-2xl relative z-10">
                 <img src="/banner/about.jpg" className="w-full h-[600px] object-cover" alt="Our Mission" />
                 <div className="absolute bottom-10 left-10 right-10 bg-white/90 backdrop-blur-xl p-8 rounded-[2rem] border border-white/20 shadow-xl">
-                   <div className="flex items-center gap-5">
-                      <div className="w-16 h-16 rounded-2xl bg-amber-400 flex items-center justify-center text-black">
-                         <PiHandHeartLight size={32} />
-                      </div>
-                      <div>
-                         <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">Local Promise</p>
-                         <p className="text-lg font-bold text-slate-900 italic">"Trust in every repair."</p>
-                      </div>
-                   </div>
+                  <div className="flex items-center gap-5">
+                    <div className="w-16 h-16 rounded-2xl bg-amber-400 flex items-center justify-center text-black">
+                      <PiHandHeartLight size={32} />
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">Local Promise</p>
+                      <p className="text-lg font-bold text-slate-900 italic">"Trust in every repair."</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@ const About = () => {
             <div className="space-y-10">
               <div className="space-y-6">
                 <h2 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight tracking-tighter">
-                  A small team with <br/> big values.
+                  A small team with <br /> big values.
                 </h2>
                 <p className="text-slate-500 text-lg font-medium leading-relaxed">
                   As a locally-owned business, we understand the importance of a functional home. When your fridge stops cooling or your washer leaks, it disrupts your entire life. That's why we built Mister Appliance—to be the reliable neighbor you contact when things go wrong.
@@ -97,21 +97,21 @@ const About = () => {
 
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { 
-                  icon: <PiUsersThreeLight />, 
-                  title: "Community Focused", 
+                {
+                  icon: <PiUsersThreeLight />,
+                  title: "Community Focused",
                   desc: "We live and work right here in your community. Every customer is a neighbor, and we treat you like one.",
                   color: "bg-blue-50 text-blue-600"
                 },
-                { 
-                  icon: <PiLightbulbLight />, 
-                  title: "Diagnostic Clarity", 
+                {
+                  icon: <PiLightbulbLight />,
+                  title: "Diagnostic Clarity",
                   desc: "We don't guess. We use professional diagnostic tools to find the root cause and explain it to you simply.",
                   color: "bg-amber-50 text-amber-600"
                 },
-                { 
-                  icon: <PiWrenchLight />, 
-                  title: "Factory Standards", 
+                {
+                  icon: <PiWrenchLight />,
+                  title: "Factory Standards",
                   desc: "Our repairs follow the exact specifications of the original manufacturer to ensure long-term reliability.",
                   color: "bg-emerald-50 text-emerald-600"
                 }
@@ -156,7 +156,7 @@ const About = () => {
               </div>
             </div>
             <div className="pt-10">
-              <button 
+              <button
                 onClick={() => openBookingModal()}
                 className="px-12 py-6 bg-amber-400 text-black rounded-[2rem] font-black uppercase tracking-widest text-sm hover:bg-white transition-all shadow-2xl active:scale-95 flex items-center gap-4 mx-auto"
               >
@@ -177,7 +177,7 @@ const About = () => {
             </p>
             <div>
               <p className="text-lg font-black text-slate-900">The Mister Appliance Team</p>
-              <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">Founded 2026</p>
+              <p className="text-sm font-bold text-slate-400 uppercase tracking-widest"></p>
             </div>
           </div>
         </div>

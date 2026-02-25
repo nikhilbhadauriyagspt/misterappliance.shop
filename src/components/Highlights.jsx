@@ -32,16 +32,16 @@ const Highlights = () => {
 
   return (
     <section className="bg-white py-20 lg:py-28 relative overflow-hidden font-sans">
-      
+
       <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
-        
+
         {/* Simplified Header */}
         <div className="max-w-2xl mb-16">
           <div className="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase tracking-widest rounded-md mb-6">
             Our promise to you
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-6">
-            Simple, reliable repair services <br/>
+            Simple, reliable repair services <br />
             for your everyday home appliances.
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed">
@@ -52,8 +52,8 @@ const Highlights = () => {
         {/* Clean Value Grid - Not Heavy */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {values.map((item, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group flex flex-col items-start transition-all duration-300"
             >
               {/* Soft Icon Box */}
@@ -77,26 +77,7 @@ const Highlights = () => {
           ))}
         </div>
 
-        {/* Authentic Bottom Note */}
-        <div className="mt-20 pt-10 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-6">
-           <div className="flex items-center gap-4">
-              <div className="flex -space-x-2">
-                 {[1, 2, 3].map(i => (
-                    <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
-                       <img src={`https://i.pravatar.cc/100?img=${i+20}`} alt="Team Member" />
-                    </div>
-                 ))}
-              </div>
-              <p className="text-sm text-slate-600 font-medium italic">
-                "We're a growing team of local repair specialists."
-              </p>
-           </div>
-           
-           <div className="flex items-center gap-2 text-amber-600 font-bold text-sm group cursor-pointer">
-              <span>See how we work</span>
-              <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
-           </div>
-        </div>
+
 
       </div>
 

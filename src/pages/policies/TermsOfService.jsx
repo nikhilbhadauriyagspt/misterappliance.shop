@@ -49,7 +49,7 @@ export default function TermsOfService() {
               <section className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-sm text-slate-600">
                 <h2 className="text-2xl font-bold text-slate-900 mb-6 uppercase tracking-wider">Agreement to our Legal Terms</h2>
                 <p>
-                  We are Mister Appliance ("<strong>Company</strong>," "<strong>we</strong>," "<strong>us</strong>," "<strong>our</strong>"), a company registered in California, United States at North Little Rock, Arkansas, USA.
+                  We are Mister Appliance ("<strong>Company</strong>," "<strong>we</strong>," "<strong>us</strong>," "<strong>our</strong>"), a company registered in South Carolina, United States at West Ashley, Charleston, SC, USA.
                 </p>
                 <p>
                   We operate the website <a href="https://misterappliance.shop/">https://misterappliance.shop/</a> (the "<strong>Site</strong>"), as well as any other related products and services that refer or link to these legal terms (the "<strong>Legal Terms</strong>") (collectively, the "<strong>Services</strong>").
@@ -58,7 +58,7 @@ export default function TermsOfService() {
                   Mister Appliance was founded on the principle that household repairs should be handled with the same level of precision as industrial maintenance. We recognize that modern appliances are complex electronic systems that require specialized knowledge and calibrated tools for effective servicing.
                 </p>
                 <p>
-                  You can contact us by email at <a href="mailto:info@misterappliance.shop">info@misterappliance.shop</a>, or by mail to North Little Rock, Arkansas, USA.
+                  You can contact us by email at <a href="mailto:info@misterappliance.shop">info@misterappliance.shop</a>, or by mail to West Ashley, Charleston, SC, USA.
                 </p>
                 <p>
                   These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and Mister Appliance, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. <strong>IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.</strong>
@@ -278,7 +278,7 @@ export default function TermsOfService() {
                       </div>
                       <div>
                         <p className="text-slate-400 text-sm font-bold uppercase tracking-wider m-0">Address</p>
-                        <p className="font-bold text-lg m-0 text-white">North Little Rock, Arkansas, USA</p>
+                        <p className="font-bold text-lg m-0 text-white">West Ashley, Charleston, SC, USA</p>
                       </div>
                     </div>
                   </div>

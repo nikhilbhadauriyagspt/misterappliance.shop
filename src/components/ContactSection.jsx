@@ -74,7 +74,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                      <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-1">Service area</p>
-                     <p className="text-slate-900 font-bold text-sm">North Little Rock, AR, USA</p>
+                     <p className="text-slate-900 font-bold text-sm">West Ashley, Charleston, SC, USA</p>
                   </div>
                </div>
             </div>
